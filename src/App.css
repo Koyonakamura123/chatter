@@ -1,4 +1,4 @@
-.App {
+.app {
   text-align: center;
   background: #fd746c;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
@@ -7,9 +7,10 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.Header {
+.header {
   background:rgba(255,255,255,0.2);
   border-bottom:1px solid white;
   height: 2.5rem;
@@ -21,7 +22,7 @@
   font-weight: bold;
 }
 
-.Logo {
+.logo {
   height:1.8rem;
   width:1.8rem;
   margin-right:10px;
@@ -52,4 +53,65 @@ html {
   html {
       font-size: 20px;
   }
+}
+
+.text-input {
+  background:rgba(255,255,255,0.2);
+  border-bottom:1px solid white;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-input input {
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 90vw;
+  height: 2.5rem;
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: #fe766c;
+  border-width: .1em;
+}
+
+.text-input input:focus {
+  outline-width: 0;
+  border-width: .3em;
+}
+
+.text-input button {
+  position: absolute;
+  border: solid;
+  border-width: .2rem;
+  border-radius: 1.2rem;
+  border-color: none;
+  background-color: #fe766c;
+  color: white;
+  right: 5vw;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-top: .4rem;
+  padding-right: .6rem;
+  padding-left: .6rem;
+}
+
+.text-input button:disabled {
+  background-color: #f8c6b6;
+}
+
+.message {
+  padding: .4rem;
+  border-style: solid;
+  border-color: #fdcbc8;
+  background-color: #fdcbc8;
+  border-radius: 2rem;
+  border-width: .3rem;
+  width: 60%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 1rem;
 }

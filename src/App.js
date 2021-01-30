@@ -1,12 +1,26 @@
 import './App.css';
+import TextInput from "./TextInput";
+import {useState} from 'react'
 
 function App() {
+  const [messages, setMessages] = useState([{text:"hello"}])
+
   return (
-    <div className="App">
-      <header className = "Header">
-        <div className = "Logo"></div>
+    <div className="app">
+      <header className = "header">
+        <div className = "logo"></div>
         CHATTER
       </header>
+      
+      <div className = "message">
+        {messages[0].text}
+      </div>
+
+      <TextInput 
+        send = {
+          t=> setMessages([{text:t}])
+        }
+      />
     </div>
   );
 }
